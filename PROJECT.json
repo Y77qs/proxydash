@@ -1,0 +1,12 @@
+{
+  "title": "ProxyDash Server and Traffic Monitor",
+  "stage": "Implemented; deployment validation recorded",
+  "tech": "Python, psutil, HTTP API, Linux, systemd, SSH",
+  "summary": "A read-only server and proxy dashboard with explicit measurement limits and stale-data handling.",
+  "achievements": [
+    "Samples CPU, memory, disk, TCP connections and throughput every two seconds; retains ten minutes of in-memory traffic history.",
+    "Preserves the last snapshot on sampling failure and marks stale readings, errors and insufficient permissions.",
+    "Supports systemd deployment, loopback-only listening, SSH forwarding and desktop/mobile layouts."
+  ],
+  "limits": "Client counts estimate unique remote TCP IPs, not physical devices. Interface throughput is not per-user billing. Existing deployment evidence is historical; no server was changed during publication."
+}
